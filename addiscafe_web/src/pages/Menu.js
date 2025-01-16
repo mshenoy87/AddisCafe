@@ -11,6 +11,7 @@ const MenuPage = () => {
             .then(response => setData(response.data))
             .catch(error => console.error("Error fetching data:", error));
     }, []);
+    console.log(data);
 
     // static website doesn't allow for axios calls from the API so we need to save the data and get it in a JSON file
     const sample = require('./../build/menu.json');

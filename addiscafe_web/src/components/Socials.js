@@ -1,5 +1,6 @@
 import React from "react";
 import './../css/socials.css';
+import Button from "react-bootstrap/Button";
 
 const Socials = () => { 
     return (
@@ -18,7 +19,7 @@ const Socials = () => {
                         <input type="email" name="email" placeholder="Email (required)" required />
                     </div>
                 </form>
-                <button class="subscribe" type="submit"><p>Sign Up</p></button>
+                <Button className="signUpButton rounded-pill" size="lg" type="submit">Sign Up</Button>
             </div>
         </div>
     )

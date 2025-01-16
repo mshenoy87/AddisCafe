@@ -11,7 +11,7 @@ const Homepage = () => {
                 <div class="col-sm-6">
                     <a href="">
                         <div class="menu-link">
-                            <img datatoggle="tool-tip" title="PC: Emma Joy Balma" src={require("../images/store_front/front_counter.JPG")} class="img-responsive" />
+                            <img datatoggle="tool-tip" title="PC: Emma Joy Balma" src={require("../images/store_front/drinks.JPG")} class="img-responsive" />
                             <h3>Browse the menu!</h3>    
                         </div>
                     </a>

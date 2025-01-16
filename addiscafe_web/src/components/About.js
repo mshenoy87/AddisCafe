@@ -37,11 +37,9 @@ const About = () => {
         <div class="container-fluid my-4">
             <div className="row justify-content-center about">
                 <div class="col-sm-6" title="PC: Emma Joy Balma">
-                    
                     <Carousel />
                 </div>
-                <div class="col-sm-6">
-                    <h2>About</h2>
+                <div class="col-sm-6 top-0">
                     <div className="col-sm-6">
                         <h2>Location:</h2>
                         <h5>801 S Oak Park Avenue, Oak Park IL</h5>
@@ -55,7 +53,6 @@ const About = () => {
                             <h2>Phone: </h2>
                             <h5>(708) 712-1558</h5>
                         </div>
-                        <h1>Est. 2016</h1>
                     </div>
                 </div>
             </div>

@@ -13,8 +13,6 @@ const SocialsPage = () => {
                 <p>instagram</p>
                 <p>yelp</p>
             </div>
-            <About />
-
         </div>
     );
 }

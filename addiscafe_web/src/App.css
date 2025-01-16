@@ -47,5 +47,28 @@
 
 .footer {
   background-color: #78211E;
-  color: #f1a469;
+  color: #EFBC49;
 }
+
+
+.footer a {
+  color: #EFBC49;
+}
+
+
+.copyright {
+  background-color: #00000030;
+}
+
+.copyright a {
+  color: #EFBC49;
+}
+
+
+/* color {
+  background-color: #78211E;
+  background-color: #EFBC49;
+  background-color: #BB9771;
+  background-color: #616852;
+
+} */
