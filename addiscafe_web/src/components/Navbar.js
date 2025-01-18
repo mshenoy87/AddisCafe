@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "react-bootstrap/Image";
 
 const Navbar = () => {
     return (
         <nav class="navbar navbar-inverse navbar-expand-lg navbar-scroll align-items-center">
             <div class="container-fluid">
                 <div class="navbar-header">
-                <a class="navbar-brand" href="#/"><p>Addis Cafe</p></a>
+                    <h1>Addis Cafe</h1>
                 </div>
                 
                 <div class="collapse navbar-collapse nav-text" id="myNavbar">

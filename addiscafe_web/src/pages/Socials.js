@@ -5,9 +5,9 @@ import About from './../components/About';
 const SocialsPage = () => {
     return (
         <div className="container-fluid">
-            <h1>Get On our Mailing List!</h1>
+            <h1>Contact Us</h1>
             <Socials />
-            <h1>Follow Us on</h1>
+            <h1>Follow us on</h1>
             <div class="text-center">
                 <p>facebook</p>
                 <p>instagram</p>

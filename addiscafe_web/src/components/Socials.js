@@ -3,23 +3,36 @@ import './../css/socials.css';
 import Button from "react-bootstrap/Button";
 
 const Socials = () => { 
+    // takes the user inputs to send an email to addiscafe's gmail inbox 
     return (
-        <div class="grid subscriber-container d-flex align-items-center" id="contact-us">
-            <div class="col-md-4">
-                <h3>Receive updates and popup-shop information</h3>
-            </div>
-
-            <div class="col-md-4 subscribe-input">
-                <form method="POST" id="contact-form" action="">
-                    <div class="name" className="subscriber-name">
-                        <input class="subscriber-first-name" type="first name" name="first-name" placeholder="First Name (required)" />
-                        <input class="subscriber-last-name" type="last name" name="last-name" placeholder="Last Name (required)" />
+        <div class="container-fluid my-4">
+            <div class="row screen">
+                <div class="col-xs-12 col-sm-4 col-md-6 text-left">
+                    <div class="screen-body-item left">
+                        <div class="title">
+                            <span>CONTACT</span>
+                            <span>US</span>
+                        </div>
                     </div>
-                    <div class="email">
-                        <input type="email" name="email" placeholder="Email (required)" required />
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6 text-right screen-body">
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="NAME" />
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="EMAIL" />
+                            </div>
+                            <div class="app-form-group message">
+                                <input class="app-form-control" placeholder="MESSAGE" />
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button">SEND</button>
+                            </div>
+                        </div>
                     </div>
-                </form>
-                <Button className="signUpButton rounded-pill" size="lg" type="submit">Sign Up</Button>
+                </div>
             </div>
         </div>
     )
