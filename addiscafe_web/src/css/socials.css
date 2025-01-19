@@ -1,8 +1,20 @@
 .screen {
   background: #616852;
-  width: 100vw;
+  width: 75vw;
+  margin-left: 25%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+}
+.screen-animation {
+  position: relative;
+  animation-name: form-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes form-animation {
+  from  {left: 75%; top:0px;}
+  to {left: 0%; top:0px;}
 }
 
 .screen-body-item {

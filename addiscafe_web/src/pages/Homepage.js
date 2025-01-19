@@ -39,7 +39,7 @@ const Homepage = () => {
         <div class="container-fluid text-center">
             <div class="row homepage-components my-5">
                 <div class="col-xs-12 col-sm-6 col-md-6">
-                    <a href="">
+                    <a href="#/menu">
                         <div class="menu-link">
                             <img datatoggle="tool-tip" title="PC: Emma Joy Balma" src={require("../images/store_front/drinks.JPG")} class="img-responsive" />
                             <h3>Browse the menu!</h3>    
