@@ -1,9 +1,27 @@
-import React from "react";
+import React, {useState, useEffect, useRef} from "react";
+import { useInView } from 'motion/react';
+
 import './../css/homepage.css';
 
 const About = (props) => {
+    const className = props.className;
+    const title = props.title;
+
+    const ref = useRef(null);
+    const isInView = useInView(ref);
+
+    useEffect(() => {
+        var about = document.getElementById("About");
+        if (isInView) {
+            about.classList.add("about-animation");
+        } else {
+            about.classList.remove("about-animation");
+        }
+    },[isInView])
+
     return (
-        <div className="row justify-content-center">
+        <div id="About" className={className} ref={ref}>
+            <h1>{title}</h1>
             <div class="col-sm-12">
                 <h2>Location:</h2>
                 <h5>801 S Oak Park Avenue, Oak Park IL</h5>

@@ -1,20 +1,19 @@
 .screen {
   background: #616852;
-  width: 75vw;
-  margin-left: 25%;
+  margin-left: 0%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
 .screen-animation {
   position: relative;
   animation-name: form-animation;
+  animation-timing-function:  ease-in-out;
   animation-duration: 1s;
-  animation-timing-function: ease-in-out;
 }
 
 @keyframes form-animation {
-  from  {left: 75%; top:0px;}
-  to {left: 0%; top:0px;}
+  0% {left: 100%;}
+  100% {left: 0%;}
 }
 
 .screen-body-item {
@@ -86,6 +85,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
   .screen-body {
     flex-direction: column;
   }
@@ -95,7 +95,7 @@
   }
 
   .title {
-    padding: 40px;
+    padding: 30px;
   }
 
   .title span {

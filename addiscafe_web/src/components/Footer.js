@@ -4,7 +4,7 @@ import Image from "react-bootstrap/Image";
 const Footer = () => {
     return (
         <footer class="text-center footer">
-            <div class="container-fluid p-5">
+            <div class="container p-5">
                 <div class="row">
                     <div class="col-sm-4">
                         <Image src={require("../images/addiscafe_logo.png")} width={"50%"} />
@@ -15,10 +15,10 @@ const Footer = () => {
                         <p>Menu</p>
                         <p>Contact us</p>
                     </div>
-                    <div class="col-sm-4 width-100 d-flex ">
-                            <h2><a href="https://www.facebook.com/Cafeaddis/"><i class="bi bi-facebook"></i></a></h2>
-                            <h2><a><i class="bi bi-yelp"></i></a></h2>
-                            <h2><a><i class="bi bi-instagram"></i></a></h2>
+                    <div class="col-sm-4 d-flex text-center">
+                            <h2 class="px-4"><a href="https://www.facebook.com/Cafeaddis/"><i class="bi bi-facebook"></i></a></h2>
+                            <h2 class="px-4"><a><i class="bi bi-yelp"></i></a></h2>
+                            <h2 class="px-4"><a><i class="bi bi-instagram"></i></a></h2>
                     </div>
 
                 </div>

@@ -17,14 +17,14 @@ const MenuPage = () => {
     const sample = require('./../build/menu.json');
     
     return (
-        <div class="container">
+        <div class="container-fluid">
             <h1>Your order will appear here:</h1>
             <h1>MENU!</h1>
-            <div className="grid row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 align-items-center center d-inline-block">
+            <div className="grid d-block">
                 {sample ? (
                     sample.map((item) => (
-                        <div className="col-xs-5 col-sm-4 col-md-3 col-lg-2 item-card" key={item.name}>
-                            <div class="mx-auto item-card-info">
+                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-2 p-3" key={item.name}>
+                            <div class="item-card-info">
                                 <h1>{item.name}</h1>
                                 <div class="dropdown-group">
                                     <select title="variations">
