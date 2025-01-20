@@ -39,17 +39,14 @@ function Carousel() {
 const Homepage = () => {
 
     return (
-        <div class="container-fluid text-center">
-            <div class="row homepage-components my-5">
-                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
-                    <a href="#/menu">
-                        <div class="menu-link">
-                            Browse the Menu
-                        </div>
-                    </a>
+        <div class="container-fluid text-center bg-red-yellow-text">
+            <div class="row my-4 mx-auto container-fluid">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center my-auto bg-gray-red-text" height={"100"}>
+                    <h1><a href="#/menu" class="menu-link">Browse Menu</a></h1>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-8 ">
-                    <h3>Carousel of specials</h3>
+                <div class="col-xs-12 col-sm-6 col-md-8 my-auto">
+                    <InfoCard title={"Seasonal Specials"} className={"bg-yellow-red-text"} />
+                
                 </div>
             </div>
             
@@ -62,7 +59,7 @@ const Homepage = () => {
                 </div>
             </div>
             
-            <div class="row whats-the-vibe my-4 p-5" title="PC: Emma Joy Balma">
+            <div class="row bg-red-yellow-text my-4 p-5" title="PC: Emma Joy Balma">
                 <div class="col-sm-8">
                     <div class="container-fluid">
                         <Carousel />  

@@ -1,31 +1,39 @@
-.homepage-components {
-  display: block;
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.menu-link {
+  color: #78211E;
+  height: 20vh;
 }
+
+.menu-link:hover {
+  color: #972a26;
+  text-decoration: none;
+}
+
+
 
 .bg-brown-blue-text {
   background-color: #BB9771;
   color: #002255;
 }
 
-.about-animation {
-  animation-name: fadeInAnimation;
-  animation-timing-function: ease;
-  animation-duration: 1.5s;
-}
-
-.whats-the-vibe {
+.bg-red-yellow-text {
   background-color: #78211E;
   color: #EFBC49;
 }
 
+.bg-yellow-red-text {
+  background-color: #EFBC49;
+  color: #78211E;
+}
 
 .bg-gray-red-text {
   background-color: #BEB3AC;
   color: #78211E;
+}
+
+.about-animation {
+  animation-name: fadeInAnimation;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
 }
 
 @keyframes fadeInAnimation {

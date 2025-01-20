@@ -7,7 +7,7 @@ const Footer = () => {
             <div class="container p-5">
                 <div class="row">
                     <div class="col-sm-4">
-                        <Image src={require("../images/addiscafe_logo.png")} width={"50%"} />
+                        <Image src={require("../images/addiscafe_logo.png")} width={"75%"} />
                         <p>Photo Credits: Emma Joy Balma</p>
                     </div>
                     <div class="col-sm-4">
