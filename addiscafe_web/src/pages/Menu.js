@@ -3,7 +3,7 @@ import "./../css/menu.css";
 import axios from 'axios';
 
 
-const MenuPage = () => {
+const MenuPage = (props) => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -17,17 +17,17 @@ const MenuPage = () => {
     const sample = require('./../build/menu.json');
     
     return (
-        <div class="container-fluid">
+        <div class="container-fluid bg-green-yellow-text">
             <h1>Your order will appear here:</h1>
             <h1>MENU!</h1>
-            <div className="grid d-block">
+            <div className="grid d-block bg-red-">
                 {sample ? (
                     sample.map((item) => (
                         <div className="col-xs-12 col-sm-6 col-md-4 col-lg-2 p-3" key={item.name}>
-                            <div class="item-card-info">
+                            <div class="item-card-info bg-brown-blue-text">
                                 <h1>{item.name}</h1>
                                 <div class="dropdown-group">
-                                    <select title="variations">
+                                    <select title="variations" class="rounded-pill p-1 bg-gray-red-text">
                                     {
                                         item.variations.map((variation) => (
                                             <option value={variation.name} key={variation.name}>

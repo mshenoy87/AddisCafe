@@ -72,7 +72,7 @@ const Homepage = () => {
                     <InfoCard title={"Merch"} className={"bg-brown-blue-text my-auto mx-auto rounded-30"}/>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-8 my-4 justify-content-end mx-auto" id="socials-info">
-                    <Socials isAnimated={true} className={"bg-green-yellow-text"}/>
+                    <Socials className={"bg-green-yellow-text"}/>
                 </div>
             </div>
         </div>

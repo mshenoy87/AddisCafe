@@ -7,9 +7,6 @@ import ContactForm from "./Contact-Form";
 
 const Socials = (props) => { 
 
-    // is the component animated, className
-    const animated = props.isAnimated ? true : false;
-
     // takes the user inputs to send an email to addiscafe's gmail inbox
     // ref will be set to the screen, which we will animate using reactJS
     const divRef = useRef(null);
@@ -18,19 +15,16 @@ const Socials = (props) => {
     const isInView = useInView(divRef);
 
     // if the element (the screen is in view)
-        useEffect(() => {
-            if (animated) {
-
-                var screen = document.getElementById("socials");
-                if (isInView) {
-                    // trigger animation by adding class to classList
-                    screen.classList.add("social-animation");
-                } else {
-                    // remove from classList if not in viewport - repeats animation 
-                    screen.classList.remove("social-animation");
-                }
-            }
-        }, [isInView]);
+    useEffect(() => {
+        var screen = document.getElementById("socials");
+        if (isInView) {
+            // trigger animation by adding class to classList
+            screen.classList.add("social-animation");
+        } else {
+            // remove from classList if not in viewport - repeats animation 
+            screen.classList.remove("social-animation");
+        }
+    }, [isInView]);
 
     return (
         <div className={"row screen " + props.className} id="socials" ref={divRef} >

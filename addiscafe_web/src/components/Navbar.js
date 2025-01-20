@@ -3,7 +3,7 @@ import Image from "react-bootstrap/Image";
 
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-inverse navbar-expand-lg navbar-scroll align-items-center my-0">
+        <nav class="navbar navbar-inverse navbar-expand-lg align-items-center my-0">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <h1>Addis Cafe</h1>

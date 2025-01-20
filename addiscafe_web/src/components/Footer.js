@@ -17,8 +17,8 @@ const Footer = () => {
                     </div>
                     <div class="col-sm-4 d-flex text-center">
                             <h2 class="px-4"><a href="https://www.facebook.com/Cafeaddis/"><i class="bi bi-facebook"></i></a></h2>
-                            <h2 class="px-4"><a><i class="bi bi-yelp"></i></a></h2>
-                            <h2 class="px-4"><a><i class="bi bi-instagram"></i></a></h2>
+                            <h2 class="px-4"><a href="https://www.yelp.com/biz/addis-cafe-oak-park-3?osq=addis+cafe"><i class="bi bi-yelp"></i></a></h2>
+                            <h2 class="px-4"><a href="https://www.instagram.com/addis_cafe/?hl=en"><i class="bi bi-instagram"></i></a></h2>
                     </div>
 
                 </div>
