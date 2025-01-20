@@ -1,10 +1,12 @@
 .screen {
-  background: #616852;
+  /* background: #616852;
+  color: #EFBC49; */
   margin-left: 0%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-.screen-animation {
+
+.social-animation {
   position: relative;
   animation-name: form-animation;
   animation-timing-function:  ease-in-out;
@@ -29,7 +31,6 @@
 .title {
   display: flex;
   flex-direction: column;
-  color: #EFBC49;
   font-size: 26px;
 }
 
@@ -57,7 +58,7 @@
   background: none;
   border: none;
   border-bottom: 1px solid #EFBC49;
-  color: #EFBC49;
+  /* color: #EFBC49; */
   font-size: 14px;
   outline: none;
   transition: border-color .2s;

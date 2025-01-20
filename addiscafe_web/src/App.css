@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: auto;
+}
 .App {
   text-align: center;
   font-family: "Anton SC", serif;
@@ -49,7 +52,6 @@
   background-color: #78211E;
   color: #EFBC49;
 }
-
 
 .footer a {
   color: #EFBC49;

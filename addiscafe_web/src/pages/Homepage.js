@@ -4,9 +4,8 @@ import Socials from './../components/Socials';
 import About from './../components/About';
 import InfoCard from "../components/InfoCard";
 
-
-
 import "../css/homepage.css";
+
 
 
 function Carousel() {
@@ -39,23 +38,15 @@ function Carousel() {
 const Homepage = () => {
 
     return (
-        <div class="container-fluid text-center bg-red-yellow-text">
-            <div class="row my-4 mx-auto container-fluid">
-                <div class="col-xs-12 col-sm-6 col-md-4 text-center my-auto bg-gray-red-text" height={"100"}>
-                    <h1><a href="#/menu" class="menu-link">Browse Menu</a></h1>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-8 my-auto">
-                    <InfoCard title={"Seasonal Specials"} className={"bg-yellow-red-text"} />
-                
-                </div>
-            </div>
-            
+        <div className="container-fluid text-center top-0 bg-red-yellow-text">
             <div class="row container-fluid align-items-center mx-auto my-4">
-                <div className="col-sm-12 col-sm-6">
-                    <InfoCard title={"Coffee"} className={"bg-brown-blue-text my-auto mx-auto rounded-30"} id="Coffee-Section" />
+                <div className="col-xs-12 col-sm-6 col-md-8 my-auto">
+                    <a href="#/menu">
+                        <InfoCard title={"Menu"} className={"bg-brown-blue-text my-auto mx-auto rounded-30"} id="Coffee-Section" />
+                    </a>
                 </div>
-                <div class="col-sm-12 col-sm-6 mx-auto my-1" id="Merch-Section">
-                    <InfoCard title={"Merch"} className={"bg-gray-red-text my-auto mx-auto rounded-30"}/>
+                <div class="col-xs-12 col-sm-6 col-md-4 my-auto">
+                    <About title={"About"} className={"bg-gray-red-text rounded-30 container-fluid my-auto"} />
                 </div>
             </div>
             
@@ -68,7 +59,7 @@ const Homepage = () => {
                 <div class="col-sm-4 my-auto p-3 about">
                     <div class=" row justify-content-center rounded-5 align-items-center my-2">
                         <h3>Waffles, scones, and more!</h3>
-                        <h4>Free Wifi, Kid Friendly</h4>
+                        <h4>Free Wifi, Kid Friendly, Vegetarian</h4>
                     </div>
                     <div class="row justify-content-center rounded-5 align-items-center my-2">                    
                         <h5>Our Story:</h5>
@@ -77,11 +68,11 @@ const Homepage = () => {
             </div>
 
             <div className="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 my-auto">
-                    <About title={"About"} className={"bg-brown-blue-text rounded-30 container-fluid my-auto"} />
+                <div class="col-sm-12 col-sm-6 col-md-4 mx-auto my-auto" id="Merch-Section">
+                    <InfoCard title={"Merch"} className={"bg-brown-blue-text my-auto mx-auto rounded-30"}/>
                 </div>
-                <div className="col-xs-12 col-sm-8 col-md-8 my-4 justify-content-end mx-auto">
-                    <Socials />
+                <div className="col-xs-12 col-sm-6 col-md-8 my-4 justify-content-end mx-auto" id="socials-info">
+                    <Socials isAnimated={true} className={"bg-green-yellow-text"}/>
                 </div>
             </div>
         </div>

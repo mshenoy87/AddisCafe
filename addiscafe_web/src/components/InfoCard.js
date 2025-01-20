@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from "react";
 import * as motion from "motion/react-client";
-import { useScroll, useInView } from "motion/react";
+import { useInView } from "motion/react";
 
 function StyleSheet() {
     return (
@@ -41,21 +41,12 @@ const InfoCard = (props) => {
 
     const ref = useRef(null);
 
-    const isInView = useInView(ref);
-
-    if (isInView) {
-        console.log("true");
-    } else {
-        console.log("false");
-    }
-
-    
     return (
         <motion.div whileHover={{scale: 1.05}}
                 whileInView={{scale: 0.9}}
                 whileTap={{scale: 0.8}} >
                     <div className={className} ref={ref}>
-                        <div class="col-12 my-auto p-2">
+                        <div class="col-12 my-4 p-2">
                             <h3>{title}</h3>
                             <div id="example" className="container-fluid">
                                 <ul>

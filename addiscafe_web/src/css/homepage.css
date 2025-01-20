@@ -1,6 +1,6 @@
 .menu-link {
   color: #78211E;
-  height: 20vh;
+
 }
 
 .menu-link:hover {
@@ -8,7 +8,9 @@
   text-decoration: none;
 }
 
-
+.to-menu {
+  height: 100%;
+}
 
 .bg-brown-blue-text {
   background-color: #BB9771;
@@ -28,6 +30,11 @@
 .bg-gray-red-text {
   background-color: #BEB3AC;
   color: #78211E;
+}
+
+.bg-green-yellow-text {
+  background-color: #616852;;
+  color: #EFBC49;
 }
 
 .about-animation {
