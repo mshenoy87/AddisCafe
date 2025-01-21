@@ -4,10 +4,6 @@ import Socials from './../components/Socials';
 import About from './../components/About';
 import InfoCard from "../components/InfoCard";
 
-import "../css/homepage.css";
-
-
-
 function Carousel() {
 
     return (
@@ -38,7 +34,7 @@ function Carousel() {
 const Homepage = () => {
 
     return (
-        <div className="container-fluid text-center top-0 bg-red-yellow-text">
+        <div className="container-fluid my-4 text-center top-0 bg-red-yellow-text">
             <div class="row container-fluid align-items-center mx-auto my-4">
                 <div className="col-xs-12 col-sm-6 col-md-8 my-auto">
                     <a href="#/menu">
@@ -72,7 +68,7 @@ const Homepage = () => {
                     <InfoCard title={"Merch"} className={"bg-brown-blue-text my-auto mx-auto rounded-30"}/>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-8 my-4 justify-content-end mx-auto" id="socials-info">
-                    <Socials className={"bg-green-yellow-text"}/>
+                    <Socials className={"row screen bg-green-yellow-text"}/>
                 </div>
             </div>
         </div>

@@ -12,31 +12,6 @@
   height: 100%;
 }
 
-.bg-brown-blue-text {
-  background-color: #BB9771;
-  color: #002255;
-}
-
-.bg-red-yellow-text {
-  background-color: #78211E;
-  color: #EFBC49;
-}
-
-.bg-yellow-red-text {
-  background-color: #EFBC49;
-  color: #78211E;
-}
-
-.bg-gray-red-text {
-  background-color: #BEB3AC;
-  color: #78211E;
-}
-
-.bg-green-yellow-text {
-  background-color: #616852;;
-  color: #EFBC49;
-}
-
 .about-animation {
   animation-name: fadeInAnimation;
   animation-timing-function: ease;

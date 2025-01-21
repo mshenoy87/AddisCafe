@@ -6,7 +6,6 @@ html {
   font-family: "Anton SC", serif;
   overflow-x: hidden;
   /* background-color: #F3B915;
-  background-color: #78211E;
   background-color: #616852;
   background-color: #BB9771;
   background-color: #002255;
@@ -49,7 +48,7 @@ html {
 }
 
 .footer {
-  background-color: #78211E;
+  background-color: #6c1d1b;
   color: #EFBC49;
 }
 
@@ -76,6 +75,12 @@ html {
   color: #002255;
 }
 
+.bg-blue-brown-text {
+  background-color: #002255;
+  color: #BB9771;
+}
+
+
 .bg-red-yellow-text {
   background-color: #78211E;
   color: #EFBC49;
@@ -86,12 +91,22 @@ html {
   color: #78211E;
 }
 
+.bg-yellow-red-text {
+  background-color: #EFBC49;
+  color: #78211E;
+}
+
+
 .bg-gray-red-text {
   background-color: #BEB3AC;
   color: #78211E;
 }
+.bg-yellow-green-text {
+  background-color: #EFBC49;
+  color: #616852;
+}
 
 .bg-green-yellow-text {
-  background-color: #616852;;
+  background-color:  #616852;
   color: #EFBC49;
 }

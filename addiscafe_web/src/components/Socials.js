@@ -1,9 +1,9 @@
 import React, {useState, useEffect, useRef} from "react";
 import { useInView } from 'motion/react';
-
-
-import './../css/socials.css';
 import ContactForm from "./Contact-Form";
+
+import "./../css/socials.css";
+import "./../App.css";
 
 const Socials = (props) => { 
 
@@ -27,7 +27,7 @@ const Socials = (props) => {
     }, [isInView]);
 
     return (
-        <div className={"row screen " + props.className} id="socials" ref={divRef} >
+        <div className="row screen bg-green-yellow-text" id="socials" ref={divRef} >
             <div class="col-xs-12 col-sm-4 col-md-6 text-left">
                 <div class="screen-body-item left">
                     <div class="title">

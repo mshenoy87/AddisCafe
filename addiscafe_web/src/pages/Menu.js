@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import "./../css/menu.css";
 import axios from 'axios';
 
-
 const MenuPage = (props) => {
     const [data, setData] = useState(null);
 
@@ -17,17 +16,17 @@ const MenuPage = (props) => {
     const sample = require('./../build/menu.json');
     
     return (
-        <div class="container-fluid bg-green-yellow-text">
+        <div class="container-fluid">
             <h1>Your order will appear here:</h1>
             <h1>MENU!</h1>
-            <div className="grid d-block bg-red-">
+            <div className="row d-block">
                 {sample ? (
                     sample.map((item) => (
-                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-2 p-3" key={item.name}>
-                            <div class="item-card-info bg-brown-blue-text">
+                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-3" key={item.name}>
+                            <div class="item-card-info bg-yellow-green-text">
                                 <h1>{item.name}</h1>
                                 <div class="dropdown-group">
-                                    <select title="variations" class="rounded-pill p-1 bg-gray-red-text">
+                                    <select title="variations" class="rounded-pill p-1" style={{color: "#002255"}}>
                                     {
                                         item.variations.map((variation) => (
                                             <option value={variation.name} key={variation.name}>
