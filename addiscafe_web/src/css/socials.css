@@ -1,36 +1,115 @@
-/* subscribe to mailing list css */
-.subscriber-container {
-    font-size: 24px;
-    padding: 10px;
-    max-width: fit-content;
-    margin: auto;
-  }
-  
-  .subscribe-input {
-    width: 50vh;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .subscribe {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .subscribe:hover {
-    background-color: #19085e;
-    padding: 10px;
-    font-size: 18px;
+.screen {
+  /* background: #616852;
+  color: #EFBC49; */
+  margin-left: 0%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.social-animation {
+  position: relative;
+  animation-name: form-animation;
+  animation-timing-function:  ease-in-out;
+  animation-duration: 1s;
+}
+
+@keyframes form-animation {
+  0% {left: 100%;}
+  100% {left: 0%;}
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+}
+
+.title:after {
+  content: '';
+  width: 25px;
+  height: 4px;
+  background: #EFBC49;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+  margin-right: 40px;
+}
+
+.message {
+  margin-top: 50px;
+  overflow-x: none;
+  overflow-y: auto;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #EFBC49;
+  /* color: #EFBC49; */
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #EFBC49;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #BEB3AC;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #f8c54f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #BEB3AC;
+}
+
+@media screen and (max-width: 600px) {
+
+  .screen-body {
+    flex-direction: column;
   }
 
-  .name {
-    width: 100%;
+  .screen-body-item.left {
+    margin-bottom: 30px;
   }
 
-  .email {
-    width: 100%;
+  .title {
+    padding: 30px;
   }
+
+  .title span {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}

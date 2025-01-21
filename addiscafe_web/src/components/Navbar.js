@@ -1,39 +1,27 @@
 import React from "react";
+import Image from "react-bootstrap/Image";
+import "./../App.css";
 
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-inverse navbar-expand-lg navbar-scroll align-items-center">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <a class="navbar-brand" href="#/"><p>Addis Cafe</p></a>
-                </div>
-                
-                <div class="collapse navbar-collapse nav-text" id="myNavbar">
-                <ul class="nav navbar-nav">
+        <nav class="navbar navbar-expand-md my-2 mx-5 bg-gray-red-text rounded-pill px-4">
+            <img class="navbar-brand m-0" href="#/" src={require("../images/addiscafe_logo_dark.png")} style={{minWidth: "auto", minHeight: "10vh"}} />
+            <div class=" navbar-collapse justify-content-md-center collapse" id="myNavbar">
+                <ul class="nav navbar-nav nav-pills mx-auto">
                     <li class="nav-item">
-                    <a href="#/" class="nav-link"><p>HOME</p></a>
+                    <a href="#/" class="nav-link rounded-pill px-5" aria-current="page">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#/menu" class="nav-link"><p>MENU</p></a>
+                        <a href="#/menu" class="nav-link rounded-pill px-5">MENU</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#/contact" class="nav-link"><p>CONTACT US</p></a>
+                        <a href="#socials-info" class="nav-link rounded-pill px-5">CONTACT US</a>
                     </li>
-                    {/* <li class="nav-item">
-                    <a href="#/" class="nav-link"><p>LOG IN</p></a>
-                    </li> */}
-                </ul>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <button type="button" title="button" class="navbar-toggle navbar-brand" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>                       
-                    <span class="icon-bar"></span>                       
-                    <span class="icon-bar"></span>                      
-                    </button>
-                </li>
                 </ul>
             </div>
+            <button type="button" title="button" class="btn-sm navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>                 
+            </button>
         </nav>
     )
 }

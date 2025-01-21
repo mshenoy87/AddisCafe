@@ -1,13 +1,24 @@
-.homepage-components {
-  display: block;
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.menu-link {
+  color: #78211E;
+
 }
 
-.about {
-  background-color: #BB9771;
-  padding: 30px;
-  border-radius: 30px;
+.menu-link:hover {
+  color: #972a26;
+  text-decoration: none;
+}
+
+.to-menu {
+  height: 100%;
+}
+
+.about-animation {
+  animation-name: fadeInAnimation;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeInAnimation {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

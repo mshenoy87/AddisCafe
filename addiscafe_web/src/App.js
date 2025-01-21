@@ -1,25 +1,24 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+// import { HashRouter as Router, Routes, Route , Link, HashRouter } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
-
 import Homepage from './pages/Homepage';
-import SocialsPage from './pages/Socials';
 import MenuPage from './pages/Menu';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-red-yellow-text">
       <Router>
         <Navbar />
         <Routes>
-          <Route path="" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/menu" element={<MenuPage />} />
-          <Route path="/contact" element={<SocialsPage />} />
-      </Routes>
+          <Route path="/socials-info" element={<Homepage />} />
+        </Routes>
       </Router>
       <Footer />
     </div>

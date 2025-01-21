@@ -2,8 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./../css/menu.css";
 import axios from 'axios';
 
-
-const MenuPage = () => {
+const MenuPage = (props) => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -11,22 +10,23 @@ const MenuPage = () => {
             .then(response => setData(response.data))
             .catch(error => console.error("Error fetching data:", error));
     }, []);
+    console.log(data);
 
     // static website doesn't allow for axios calls from the API so we need to save the data and get it in a JSON file
     const sample = require('./../build/menu.json');
     
     return (
-        <div class="container">
+        <div class="container-fluid">
             <h1>Your order will appear here:</h1>
             <h1>MENU!</h1>
-            <div className="grid row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 align-items-center center d-inline-block">
+            <div className="row d-block">
                 {sample ? (
                     sample.map((item) => (
-                        <div className="col-xs-5 col-sm-4 col-md-3 col-lg-2 item-card" key={item.name}>
-                            <div class="mx-auto item-card-info">
+                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-3" key={item.name}>
+                            <div class="item-card-info bg-yellow-green-text">
                                 <h1>{item.name}</h1>
                                 <div class="dropdown-group">
-                                    <select title="variations">
+                                    <select title="variations" class="rounded-pill p-1" style={{color: "#002255"}}>
                                     {
                                         item.variations.map((variation) => (
                                             <option value={variation.name} key={variation.name}>
