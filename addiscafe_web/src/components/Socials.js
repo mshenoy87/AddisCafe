@@ -5,7 +5,7 @@ import ContactForm from "./Contact-Form";
 import "./../css/socials.css";
 import "./../App.css";
 
-const Socials = (props) => { 
+const Socials = () => { 
 
     // takes the user inputs to send an email to addiscafe's gmail inbox
     // ref will be set to the screen, which we will animate using reactJS
@@ -27,7 +27,7 @@ const Socials = (props) => {
     }, [isInView]);
 
     return (
-        <div className="row screen bg-green-yellow-text" id="socials" ref={divRef} >
+        <div className="row rounded-start-5 bg-green-yellow-text" id="socials" ref={divRef} >
             <div class="col-xs-12 col-sm-4 col-md-6 text-left">
                 <div class="screen-body-item left">
                     <div class="title">

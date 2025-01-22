@@ -34,22 +34,8 @@ html {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .footer {
   background-color: #6c1d1b;
-  color: #EFBC49;
 }
 
 .footer a {
@@ -64,11 +50,6 @@ html {
 .copyright a {
   color: #EFBC49;
 }
-
-.rounded-30 {
-  border-radius: 30px;
-}
-
 
 .bg-brown-blue-text {
   background-color: #BB9771;

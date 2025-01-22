@@ -17,13 +17,12 @@ const MenuPage = (props) => {
     
     return (
         <div class="container-fluid">
-            <h1>Your order will appear here:</h1>
-            <h1>MENU!</h1>
+            <h1>MENU</h1>
             <div className="row d-block">
                 {sample ? (
                     sample.map((item) => (
-                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-3" key={item.name}>
-                            <div class="item-card-info bg-yellow-green-text">
+                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-3" key={item.name} style={{height: "100%"}}>
+                            <div class="item-card bg-yellow-green-text rounded-5 p-4">
                                 <h1>{item.name}</h1>
                                 <div class="dropdown-group">
                                     <select title="variations" class="rounded-pill p-1" style={{color: "#002255"}}>

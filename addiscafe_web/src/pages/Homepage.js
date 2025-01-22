@@ -7,7 +7,7 @@ import InfoCard from "../components/InfoCard";
 function Carousel() {
 
     return (
-        <div id="myCarousel" class="carousel slide carousel rounded-30" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide carousel rounded-5" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -38,11 +38,11 @@ const Homepage = () => {
             <div class="row container-fluid align-items-center mx-auto my-4">
                 <div className="col-xs-12 col-sm-6 col-md-8 my-auto">
                     <a href="#/menu">
-                        <InfoCard title={"Menu"} className={"bg-brown-blue-text my-auto mx-auto rounded-30"} id="Coffee-Section" />
+                        <InfoCard title={"Menu"} className={"bg-brown-blue-text my-auto mx-auto rounded-5"} id="Coffee-Section" />
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 my-auto">
-                    <About title={"About"} className={"bg-gray-red-text rounded-30 container-fluid my-auto"} />
+                    <About title={"About"} className={"bg-gray-red-text rounded-5 container-fluid my-auto"} />
                 </div>
             </div>
             
@@ -64,11 +64,11 @@ const Homepage = () => {
             </div>
 
             <div className="row">
-                <div class="col-sm-12 col-sm-6 col-md-4 mx-auto my-auto" id="Merch-Section">
-                    <InfoCard title={"Merch"} className={"bg-brown-blue-text my-auto mx-auto rounded-30"}/>
+                <div class="col-sm-12 col-sm-6 col-md-4 mx-auto my-4" id="Merch-Section">
+                    <InfoCard title={"Merch"} className={"bg-brown-blue-text my-auto mx-auto rounded-5"}/>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-8 my-4 justify-content-end mx-auto" id="socials-info">
-                    <Socials className={"row screen bg-green-yellow-text"}/>
+                    <Socials />
                 </div>
             </div>
         </div>
