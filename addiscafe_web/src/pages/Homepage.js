@@ -34,15 +34,15 @@ function Carousel() {
 const Homepage = () => {
 
     return (
-        <div className="container-fluid my-4 text-center top-0 bg-red-yellow-text">
+        <div className="container-fluid my-4 text-center top-0">
             <div class="row container-fluid align-items-center mx-auto my-4">
                 <div className="col-xs-12 col-sm-6 col-md-8 my-auto">
                     <a href="#/menu">
-                        <InfoCard title={"Menu"} className={"bg-brown-blue-text my-auto mx-auto rounded-5"} id="Coffee-Section" />
+                        <InfoCard title={"Menu"} className={"bg-brown blue-text my-auto mx-auto rounded-5"} id="Coffee-Section" />
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 my-auto">
-                    <About title={"About"} className={"bg-gray-red-text rounded-5 container-fluid my-auto"} />
+                    <About title={"About"} className={"bg-gray red-text rounded-5 container-fluid my-auto"} />
                 </div>
             </div>
             
@@ -65,7 +65,7 @@ const Homepage = () => {
 
             <div className="row">
                 <div class="col-sm-12 col-sm-6 col-md-4 mx-auto my-4" id="Merch-Section">
-                    <InfoCard title={"Merch"} className={"bg-brown-blue-text my-auto mx-auto rounded-5"}/>
+                    <InfoCard title={"Merch"} className={"bg-brown blue-text my-auto mx-auto rounded-5"}/>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-8 my-4 justify-content-end mx-auto" id="socials-info">
                     <Socials />

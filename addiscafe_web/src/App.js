@@ -11,7 +11,7 @@ import MenuPage from './pages/Menu';
 
 function App() {
   return (
-    <div className="App bg-red-yellow-text">
+    <div className="App bg-red yellow-text">
       <Router>
         <Navbar />
         <Routes>

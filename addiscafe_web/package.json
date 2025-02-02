@@ -11,6 +11,7 @@
     "cra-template": "1.2.0",
     "emailjs": "^4.0.3",
     "motion": "^11.18.1",
+    "node": "^23.7.0",
     "react": "^19.0.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-bootstrap": "^2.10.7",
@@ -47,5 +48,9 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  }
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

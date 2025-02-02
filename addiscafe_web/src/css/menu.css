@@ -1,5 +1,11 @@
 .item-card {
     box-shadow: rgb(0,0,0,0.34) 1px 1px 5px;
-    height: 25vh;
+    min-height: 275px;
     width: 100%;
+}
+
+
+.add-to-cart:hover {
+    background-color: #BB9771;
+    color: #002255;
 }

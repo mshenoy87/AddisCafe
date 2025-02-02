@@ -1,45 +1,28 @@
 html {
   scroll-behavior: smooth;
+  background-color: var(--red);
 }
 .App {
   text-align: center;
   font-family: "Anton SC", serif;
   overflow-x: hidden;
-  /* background-color: #F3B915;
-  background-color: #616852;
-  background-color: #BB9771;
-  background-color: #002255;
-  background-color: #BEB3AC */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+  --red: #78211E;
+  --yellow: #EFBC49;
+  --green: #616852;
+  --blue: #002255;
+  --gray: #BEB3AC;
+  --brown: #BB9771;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .footer {
-  background-color: #6c1d1b;
+  background-color: #00000030;
 }
 
 .footer a {
-  color: #EFBC49;
+  color: var(--yellow)
 }
 
 
@@ -48,46 +31,56 @@ html {
 }
 
 .copyright a {
-  color: #EFBC49;
+  color: var(--yellow)
+
 }
 
-.bg-brown-blue-text {
-  background-color: #BB9771;
-  color: #002255;
+.bg-brown {
+  background-color: var(--brown);
 }
 
-.bg-blue-brown-text {
-  background-color: #002255;
-  color: #BB9771;
+.bg-blue {
+  background-color: var(--blue);
 }
 
+.bg-red {
+  background-color: var(--red);
 
-.bg-red-yellow-text {
-  background-color: #78211E;
-  color: #EFBC49;
 }
 
-.bg-yellow-red-text {
-  background-color: #EFBC49;
-  color: #78211E;
+.bg-yellow {
+  background-color: var(--yellow);
 }
 
-.bg-yellow-red-text {
-  background-color: #EFBC49;
-  color: #78211E;
+.bg-gray {
+  background-color: var(--gray);
+  color: var(--red);
 }
 
-
-.bg-gray-red-text {
-  background-color: #BEB3AC;
-  color: #78211E;
-}
-.bg-yellow-green-text {
-  background-color: #EFBC49;
-  color: #616852;
+.bg-green {
+  background-color:  var(--green);
 }
 
-.bg-green-yellow-text {
-  background-color:  #616852;
-  color: #EFBC49;
+.brown-text {
+  color: var(--brown);
+}
+
+.blue-text {
+  color: var(--blue);
+}
+
+.red-text {
+  color: var(--red);
+}
+
+.yellow-text {
+  color: var(--yellow);
+}
+
+.gray-text {
+  color: var(--gray);
+}
+
+.green-text {
+  color: var(--green)
 }

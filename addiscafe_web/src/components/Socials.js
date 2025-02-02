@@ -27,7 +27,7 @@ const Socials = () => {
     }, [isInView]);
 
     return (
-        <div className="row rounded-start-5 bg-green-yellow-text" id="socials" ref={divRef} >
+        <div className="row rounded-start-5 bg-green yellow-text" id="socials" ref={divRef} >
             <div class="col-xs-12 col-sm-4 col-md-6 text-left">
                 <div class="screen-body-item left">
                     <div class="title">
