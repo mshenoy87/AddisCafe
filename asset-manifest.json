@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/AddisCafe/static/css/main.894461f2.css",
-    "main.js": "/AddisCafe/static/js/main.b7cb3ed1.js",
+    "main.css": "/AddisCafe/static/css/main.b947d5ee.css",
+    "main.js": "/AddisCafe/static/js/main.6e0ea500.js",
     "static/media/outside.JPG": "/AddisCafe/static/media/outside.b934ee6566a0017cd652.JPG",
     "static/media/front_counter.JPG": "/AddisCafe/static/media/front_counter.f56411077ac09473b547.JPG",
     "static/media/drinks.JPG": "/AddisCafe/static/media/drinks.c265caeb83847bd0a036.JPG",
     "static/media/addiscafe_logo.png": "/AddisCafe/static/media/addiscafe_logo.7eb46c43d7881bc07f5a.png",
     "static/media/addiscafe_logo_dark.png": "/AddisCafe/static/media/addiscafe_logo_dark.63cab855232d29524ee5.png",
     "index.html": "/AddisCafe/index.html",
-    "main.894461f2.css.map": "/AddisCafe/static/css/main.894461f2.css.map",
-    "main.b7cb3ed1.js.map": "/AddisCafe/static/js/main.b7cb3ed1.js.map"
+    "main.b947d5ee.css.map": "/AddisCafe/static/css/main.b947d5ee.css.map",
+    "main.6e0ea500.js.map": "/AddisCafe/static/js/main.6e0ea500.js.map"
   },
   "entrypoints": [
-    "static/css/main.894461f2.css",
-    "static/js/main.b7cb3ed1.js"
+    "static/css/main.b947d5ee.css",
+    "static/js/main.6e0ea500.js"
   ]
 }
