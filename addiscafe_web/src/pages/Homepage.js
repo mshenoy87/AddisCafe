@@ -34,18 +34,7 @@ function Carousel() {
 const Homepage = () => {
 
     return (
-        <div className="container-fluid my-4 text-center top-0">
-            <div class="row container-fluid align-items-center mx-auto my-4">
-                <div className="col-xs-12 col-sm-6 col-md-8 my-auto">
-                    <a href="#/menu">
-                        <InfoCard title={"Menu"} className={"bg-brown blue-text my-auto mx-auto rounded-5"} id="Coffee-Section" />
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 my-auto">
-                    <About title={"About"} className={"bg-gray red-text rounded-5 container-fluid my-auto"} />
-                </div>
-            </div>
-            
+        <div className="container-fluid my-4 text-center top-0">            
             <div class="row bg-red-yellow-text my-4 p-5" title="PC: Emma Joy Balma">
                 <div class="col-sm-8">
                     <div class="container-fluid">
@@ -64,10 +53,10 @@ const Homepage = () => {
             </div>
 
             <div className="row">
-                <div class="col-sm-12 col-sm-6 col-md-4 mx-auto my-4" id="Merch-Section">
-                    <InfoCard title={"Merch"} className={"bg-brown blue-text my-auto mx-auto rounded-5"}/>
+                <div class="col-xs-12 col-sm-6 my-auto">
+                    <About title={"About"} className={"bg-gray red-text rounded-5 container-fluid py-4 my-auto"} />
                 </div>
-                <div className="col-xs-12 col-sm-6 col-md-8 my-4 justify-content-end mx-auto" id="socials-info">
+                <div className="col-xs-12 col-sm-6 my-4 justify-content-end mx-auto" id="socials-info">
                     <Socials />
                 </div>
             </div>
